@@ -9,7 +9,7 @@ then
 fi
 
 PATH=$1
-SCRIPT="./te/brat-fafac7008a397cb6632a01f66d3e4a04c3f9398a/tools/anntoconll.py"
+SCRIPT="./te/brat-fafac7008a397cb6632a01f66d3e4a04c3f9398a/tools/anntoconll.py" # from https://github.com/nlplab/brat
 for f in $(/usr/bin/find $PATH -name '*.text');do
     /usr/bin/python2.7 $SCRIPT $f;
 done
